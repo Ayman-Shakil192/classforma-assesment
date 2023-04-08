@@ -1,0 +1,16 @@
+.modules_canvas_container {
+  display: flex;
+  height: 100vh;
+}
+
+.modules_container {
+  width: 40%;
+  height: 100%;
+}
+
+.title {
+  background-color: #fff;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  padding: 20px;
+}

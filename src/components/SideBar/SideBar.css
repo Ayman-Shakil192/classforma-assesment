@@ -1,0 +1,128 @@
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+  display: flex;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+.data_list {
+  height: 100%;
+}
+
+.module_data {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid blue;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.module_data:hover {
+  cursor: pointer;
+}
+
+.dnd_input,
+.dnd_output {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.dnd_input {
+  border-right: 1px solid blue;
+}
+
+.dnd_output {
+  border-left: 1px solid blue;
+}
+
+.data_list {
+  height: 75vh;
+}
+
+.module_name {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #daf5ff;
+}
+
+.module_data_container {
+  background-color: #fff;
+  border: 1px solid blue;
+  padding-top: 40px;
+}
+
+.pagination-container {
+  height: 100px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_button {
+  font-size: 20px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
